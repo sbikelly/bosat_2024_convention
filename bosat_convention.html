@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📘 BOSAT 2024 Convention</title>
+    <title>BOSAT 2024 Convention</title>
+    <link rel="icon" href="bosat_badge.png" type="image/x-icon">
     <style>
         /* General Styles */
         body {
@@ -23,7 +24,7 @@
             color: white;
             padding: 20px;
             position: relative;
-            text-align: center;
+            /*text-align: center;*/
         }
 
         .header img {
@@ -70,7 +71,7 @@
             height: 100%;
             object-fit: cover;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
         }
 
         /* Text Section */
@@ -83,7 +84,7 @@
             display: flex;
             align-items: center;
             color: #004d22;
-            font-size: 28px;
+            font-size: 30px;
             margin-top: 0;
         }
 
@@ -96,7 +97,7 @@
         .text-content h2 {
             color: #004d22;
             margin-top: 10px;
-            font-size: 22px;
+            font-size: 24px;
         }
 
         .text-content p {
@@ -106,7 +107,8 @@
 
         .text-content p strong {
             color: #004d22;
-            font-weight: bold;
+            font-weight: bolder;
+            font-size: 18px;
         }
 
         /* Button */
@@ -160,6 +162,18 @@
             color: red;
         }
 
+        /* Emphasized Text Style */
+        .emphasized-text {
+            font-weight: bold;
+            color: black;
+            /* Dark green for emphasis */
+            font-size: 16px;
+            /* Slightly larger font size */
+            margin-left: 5px;
+            /* Add spacing between label and text */
+        }
+
+
         iframe {
             width: 100%;
             height: 500px;
@@ -186,7 +200,7 @@
 <body>
     <!-- Header Section -->
     <div class="header">
-        <img src="bosat_badge.png" alt="BOSAT Badge">
+        <!--img src="bosat_badge.png" alt="BOSAT Badge"-->
         <h1>BOSAT Annual Convention</h1>
     </div>
 
@@ -209,9 +223,11 @@
                 <strong>Venue:</strong> College Hall, Bukuru Technical College, Jos
             </p>
             <p>
-                <strong>Theme:</strong> Roles of Alumni in a Retrogressive Alma Mater: <em>GSTC Bukuru in
-                    Retrospect</em><br>
-                <strong>Guest Speaker:</strong> Nde Tanimu Gontur (Former Principal of the College)
+                <strong>Theme:</strong>
+                <span class="emphasized-text">Roles of Alumni in a Retrogressive Alma Mater:
+                    <em>GSTC Bukuru in Retrospect</em></span><br>
+                <strong>Guest Speaker:</strong>
+                <span class="emphasized-text">Nde Tanimu Gontur</span> (Former Principal of the College)
             </p>
             <p>
                 Join us for this significant event to <strong>reconnect, reflect, and contribute</strong> to the future
