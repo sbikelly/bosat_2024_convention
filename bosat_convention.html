@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOSAT 2024 Convention</title>
+    <title>📘 BOSAT 2024 Convention</title>
     <style>
         /* General Styles */
         body {
@@ -12,14 +12,14 @@
             margin: 0;
             padding: 0;
             background-color: #e9f5e6;
-            /* Light green to match the badge */
+            /* Light green */
             color: #333;
         }
 
         /* Header Section */
         .header {
             background-color: #004d22;
-            /* Dark green from the badge */
+            /* Dark green */
             color: white;
             padding: 20px;
             position: relative;
@@ -39,15 +39,15 @@
             font-size: 28px;
         }
 
-        /* Content Section with Flexbox */
+        /* Content Section */
         .content {
             display: flex;
+            flex-wrap: wrap;
             align-items: flex-start;
-            justify-content: flex-start;
+            justify-content: space-between;
             margin: 20px auto;
-            max-width: 900px;
+            max-width: 1200px;
             background-color: #ffffff;
-            /* White for readability */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
@@ -58,14 +58,17 @@
         /* Flyer Section */
         .flyer {
             flex: 1;
-            /* Allow the flyer to take up equal space */
             max-width: 300px;
-            /* Control flyer size */
+            min-width: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .flyer img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -73,18 +76,37 @@
         /* Text Section */
         .text-content {
             flex: 2;
-            /* Text takes more space compared to the flyer */
-            text-align: left;
+            min-width: 300px;
+        }
+
+        .text-content h1 {
+            display: flex;
+            align-items: center;
+            color: #004d22;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        .text-content h1 img {
+            margin-right: 10px;
+            width: 50px;
+            height: 50px;
         }
 
         .text-content h2 {
             color: #004d22;
-            /* Dark green from the badge */
-            margin-top: 0;
+            margin-top: 10px;
+            font-size: 22px;
         }
 
         .text-content p {
             line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .text-content p strong {
+            color: #004d22;
+            font-weight: bold;
         }
 
         /* Button */
@@ -143,6 +165,21 @@
             height: 500px;
             border: none;
         }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .flyer {
+                max-width: 100%;
+            }
+
+            .text-content {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -150,7 +187,7 @@
     <!-- Header Section -->
     <div class="header">
         <img src="bosat_badge.png" alt="BOSAT Badge">
-        <h1>BOSAT 2024 Convention</h1>
+        <h1>BOSAT Annual Convention</h1>
     </div>
 
     <!-- Main Content Section -->
@@ -162,16 +199,31 @@
 
         <!-- Text Section -->
         <div class="text-content">
-            <h2>Welcome to the BOSAT 2024 Convention!</h2>
+            <h1>
+                <img src="bosat_badge.png" alt="Badge"> Bukuru Old Students Association Technical (BOSAT)
+            </h1>
+            <h2>2024 Annual National Convention and Commissioning of Rehabilitated Road within the College</h2>
             <p>
-                Join us in celebrating the Bukuru Old Students Association (Technical). This year’s convention
-                will be held on <strong>30th November, 2024</strong>, at <strong>Bukuru Technical College, Jos</strong>.
+                <strong>Date:</strong> 30th November 2024<br>
+                <strong>Time:</strong> 11:00 AM<br>
+                <strong>Venue:</strong> College Hall, Bukuru Technical College, Jos
             </p>
             <p>
-                It’s an opportunity to reconnect with old friends, share memories, and plan for the future
-                of our beloved alma mater. Don’t miss out!
+                <strong>Theme:</strong> Roles of Alumni in a Retrogressive Alma Mater: <em>GSTC Bukuru in
+                    Retrospect</em><br>
+                <strong>Guest Speaker:</strong> Nde Tanimu Gontur (Former Principal of the College)
             </p>
-            <button class="btn" onclick="openModal()">Register Now</button>
+            <p>
+                Join us for this significant event to <strong>reconnect, reflect, and contribute</strong> to the future
+                of our alma mater.
+                Together, we can make a difference!
+            </p>
+            <p>
+                To confirm your attendance, please <button class="btn" onclick="openModal()">Register here</button>.
+            </p>
+            <p>
+                <strong>For enquiries call:</strong> 08067822715, 08036158464, 07038368996, 08036267522
+            </p>
         </div>
     </div>
 
